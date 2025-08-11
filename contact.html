@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Naga Raj — Contact</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="brand">
+      <div class="logo">NR</div>
+      <div class="brand-text">
+        <h1>Naga Raj</h1>
+        <p>Front-end & Flutter Developer</p>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="contact-section" style="padding-top: 100px; max-width: 700px; margin: auto; padding: 100px 20px;">
+    <h2>📬 Get In Touch</h2>
+    <p style="color: var(--muted); margin-bottom: 40px;">
+      Have a project in mind? Let’s build something amazing together! Fill out the form below and I’ll get back to you soon.
+    </p>
+
+    <form action="#" method="post" style="display: flex; flex-direction: column; gap: 20px;">
+      <input type="text" name="name" placeholder="Your Name" required style="padding: 15px; border-radius: var(--radius); border: none; background: var(--card); color: var(--text);">
+      <input type="email" name="email" placeholder="Your Email" required style="padding: 15px; border-radius: var(--radius); border: none; background: var(--card); color: var(--text);">
+      <textarea name="message" placeholder="Your Message" rows="6" required style="padding: 15px; border-radius: var(--radius); border: none; background: var(--card); color: var(--text);"></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Naga Raj — All Rights Reserved.</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
