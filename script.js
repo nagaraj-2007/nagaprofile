@@ -130,8 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
         delay: 0.3
       });
     }
-  
-    // Contact Page
+
     // Contact Page
 if (document.querySelector(".contact-section")) {
     gsap.from(".contact-section h2", {
