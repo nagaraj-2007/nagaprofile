@@ -94,20 +94,7 @@
             <!-- Timeline -->
             <div class="timeline" data-aos="fade-up" data-aos-delay="400">
                 <h3 class="timeline-title">My Journey</h3>
-                <div class="timeline-items">
-                    <div class="timeline-item">
-                        <div class="timeline-year">2023</div>
-                        <div class="timeline-content">Started Coding</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2024</div>
-                        <div class="timeline-content">Flutter Projects</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2025</div>
-                        <div class="timeline-content">Cloud Architecture Learning</div>
-                    </div>
-                </div>
+                <div id="journey-container" class="timeline-items"></div>
             </div>
         </div>
     </section>
@@ -116,39 +103,7 @@
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Dart</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">JavaScript</span>
-                    </div>
-                </div>
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Frameworks</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Flutter</span>
-                        <span class="skill-tag">Firebase</span>
-                    </div>
-                </div>
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                    <h3>Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">Apps Script</span>
-                    </div>
-                </div>
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
-                    <h3>Other</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">REST API</span>
-                        <span class="skill-tag">State Management</span>
-                        <span class="skill-tag">LaTeX Rendering</span>
-                    </div>
-                </div>
-            </div>
+            <div id="skills-list" class="skills-grid"></div>
         </div>
     </section>
 
@@ -156,121 +111,7 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-image">
-                        <img src="assert/Screenshot 2025-07-23 193540.png" alt="Math Quiz App">
-                    </div>
-                    <div class="project-content">
-                        <h3>Math Quiz App</h3>
-                        <p>Interactive quiz application built with Flutter and Google Sheets integration for dynamic content management.</p>
-                        <div class="project-tech">
-                            <span>Flutter</span>
-                            <span>Google Sheets</span>
-                            <span>Dart</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="#" class="btn btn-small">Live Preview</a>
-                            <a href="#" class="btn btn-outline-small">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-image">
-                        <img src="assert/IMG-20250823-WA0018[1].jpg" alt="Physics Quiz App">
-                    </div>
-                    <div class="project-content">
-                        <h3>Physics Quiz App</h3>
-                        <p>Educational quiz platform with advanced physics problems and real-time scoring system.</p>
-                        <div class="project-tech">
-                            <span>Flutter</span>
-                            <span>Firebase</span>
-                            <span>State Management</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="#" class="btn btn-small">Live Preview</a>
-                            <a href="#" class="btn btn-outline-small">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-image">
-                        <img src="assert/IMG-20250823-WA0020[1].jpg" alt="Flutter Cart App">
-                    </div>
-                    <div class="project-content">
-                        <h3>Flutter Cart App</h3>
-                        <p>E-commerce cart application using Cubit for state management with smooth animations and modern UI.</p>
-                        <div class="project-tech">
-                            <span>Flutter</span>
-                            <span>Cubit</span>
-                            <span>BLoC Pattern</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="#" class="btn btn-small">Live Preview</a>
-                            <a href="#" class="btn btn-outline-small">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="project-image">
-                        <img src="assert/IMG-20250823-WA0021[1].jpg" alt="Searchable DataTable">
-                    </div>
-                    <div class="project-content">
-                        <h3>Searchable DataTable</h3>
-                        <p>Dynamic data table with search functionality integrated with Google Sheets and Cubit state management.</p>
-                        <div class="project-tech">
-                            <span>Flutter</span>
-                            <span>Google Sheets API</span>
-                            <span>Cubit</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="#" class="btn btn-small">Live Preview</a>
-                            <a href="#" class="btn btn-outline-small">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="project-image">
-                        <img src="assert/IMG-20250823-WA0028[1].jpg" alt="Game Logic Conversion">
-                    </div>
-                    <div class="project-content">
-                        <h3>C++ → Flutter Game Logic</h3>
-                        <p>Converted complex C++ game algorithms to Flutter/Dart for cross-platform mobile gaming experience.</p>
-                        <div class="project-tech">
-                            <span>C++</span>
-                            <span>Flutter</span>
-                            <span>Algorithm Design</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="#" class="btn btn-small">Live Preview</a>
-                            <a href="#" class="btn btn-outline-small">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="project-image">
-                        <div class="project-placeholder">🌐</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Portfolio Website</h3>
-                        <p>Modern, responsive portfolio website with smooth animations and clean design principles.</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="#" class="btn btn-small">Live Preview</a>
-                            <a href="#" class="btn btn-outline-small">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id="projects-container" class="projects-grid"></div>
         </div>
     </section>
 
