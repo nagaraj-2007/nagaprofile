@@ -306,8 +306,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Send using EmailJS
             emailjs.send('service_6voh64j', 'template_vsnc5to', {
-                user_name: document.getElementById('name').value,
-                user_email: email,
+                name: document.getElementById('name').value,
+                email: email,
                 message: document.getElementById('message').value
             })
             .then(() => {
