@@ -282,13 +282,42 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Contact form
-    const contactForm = document.querySelector('.contact-form');
+    // Contact form with EmailJS
+    const contactForm = document.getElementById('contactForm');
+    const disposable = ['mailinator.com', '10minutemail.com', 'tempmail.com', 'guerrillamail.com'];
+    
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            contactForm.reset();
+            
+            const email = document.getElementById('email').value.trim();
+            const domain = email.split('@')[1]?.toLowerCase();
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if (!re.test(email)) {
+                alert('Invalid email address.');
+                return;
+            }
+            
+            if (disposable.includes(domain)) {
+                alert('Temporary emails are not allowed.');
+                return;
+            }
+            
+            // Send using EmailJS
+            emailjs.send('service_6voh64j', 'template_vsnc5to', {
+                user_name: document.getElementById('name').value,
+                user_email: email,
+                message: document.getElementById('message').value
+            })
+            .then(() => {
+                alert('Message sent successfully! I\'ll get back to you soon.');
+                contactForm.reset();
+            })
+            .catch(err => {
+                alert('Failed to send message. Please try again.');
+                console.error('EmailJS error:', err);
+            });
         });
     }
 });
