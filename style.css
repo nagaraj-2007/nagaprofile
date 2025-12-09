@@ -100,13 +100,13 @@ body {
 .logo-icon {
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, var(--accent), #FF8A50);
+    background: linear-gradient(135deg, #6366F1, #8B5CF6);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
 }
 
